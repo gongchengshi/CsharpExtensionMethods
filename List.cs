@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Treehouse.Collections.Generic
+namespace Treehouse
 {
     public class List<T> : System.Collections.Generic.List<T>
     {

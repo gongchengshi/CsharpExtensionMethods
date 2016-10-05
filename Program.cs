@@ -1,5 +1,5 @@
 ﻿using System;
-using Treehouse.Collections.Generic;
+using System.Collections.Generic;
 
 namespace Treehouse
 {
@@ -26,7 +26,7 @@ namespace Treehouse
                 "ideal"
             };
 
-            Console.WriteLine($"My dog Jojo is the {synonymsForBest.RandomItem()} dog!");
+            Console.WriteLine($"My dog Jojo is the {ListUtils.RandomItem(synonymsForBest)} dog!");
             Console.ReadLine();
         }
     }
