@@ -26,7 +26,7 @@ namespace Treehouse
                 "ideal"
             };
 
-            Console.WriteLine($"My dog Jojo is the {ListUtils.RandomItem(synonymsForBest)} dog!");
+            Console.WriteLine($"My dog Jojo is the {synonymsForBest.RandomItem()} dog!");
             Console.ReadLine();
         }
     }
