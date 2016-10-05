@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using Treehouse.Collections.Generic;
 
 namespace Treehouse
 {
@@ -23,11 +23,11 @@ namespace Treehouse
                 "unrivaled",
                 "ultimate",
                 "perfect",
-                "incomparable",
                 "ideal"
             };
 
             Console.WriteLine($"My dog Jojo is the {synonymsForBest.RandomItem()} dog!");
+            Console.ReadLine();
         }
     }
 }
