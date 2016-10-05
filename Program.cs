@@ -27,10 +27,7 @@ namespace Treehouse
                 "ideal"
             };
 
-            var random = new Random();
-            var best = synonymsForBest[random.Next(0, synonymsForBest.Count -1)];
-
-            Console.WriteLine($"My dog Jojo is the {best} dog!");
+            Console.WriteLine($"My dog Jojo is the {synonymsForBest.RandomItem()} dog!");
         }
     }
 }
