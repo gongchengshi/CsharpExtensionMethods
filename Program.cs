@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Treehouse.Common;
 
 namespace Treehouse
 {
@@ -7,6 +8,12 @@ namespace Treehouse
     {
         public static void Main()
         {
+            int num = 5;
+            if(num.IsEven())
+            {
+                
+            }
+
             var synonymsForBest = new List<string>
             {
                 "best",
