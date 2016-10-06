@@ -20,5 +20,19 @@ namespace Treehouse.Linq
 
             return !@this.Any();
         }
+
+        public static T FirstOr<T>(this IEnumerable<T> @this,
+                                   Func<T, bool> predicate,
+                                   Func<T> onOr)
+        {
+            T found = @this.FirstOrDefault(predicate);
+
+            if(found.Equals(default(T)))
+            {
+                found = onOr();
+            }
+
+            return found;
+        }
     }
 }

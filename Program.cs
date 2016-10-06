@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Treehouse.Common;
+using Treehouse.Linq;
 
 namespace Treehouse
 {
@@ -8,12 +9,6 @@ namespace Treehouse
     {
         public static void Main()
         {
-            int num = 5;
-            if(num.IsEven())
-            {
-                
-            }
-
             var synonymsForBest = new List<string>
             {
                 "best",
@@ -33,7 +28,9 @@ namespace Treehouse
                 "ideal"
             };
 
-            Console.WriteLine($"My dog Jojo is the {synonymsForBest.RandomItem()} dog!");
+            var best = synonymsForBest.FirstOr(s => s.Length.IsEven(), synonymsForBest.RandomItem);
+
+            Console.WriteLine($"My dog Jojo is the {best} dog!");
             Console.ReadLine();
         }
     }
