@@ -13,5 +13,10 @@ namespace Treehouse.Common
 
             return @this.Split(new[] { delimiter }, max);
         }
+
+        public static bool IsNullOrEmpty(this string @this)
+        {
+            return string.IsNullOrEmpty(@this);
+        }
     }
 }
