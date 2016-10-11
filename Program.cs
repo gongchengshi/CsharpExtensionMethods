@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Treehouse.Common;
 using Treehouse.Linq;
+using static Treehouse.Common.IntExtensions;
 
 namespace Treehouse
 {
