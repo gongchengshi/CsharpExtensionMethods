@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Treehouse
+namespace Treehouse.Collections.Generic
 {
     public static class IListExtensions
     {

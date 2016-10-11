@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Treehouse.Linq;
+using Treehouse.Collections.Generic;
 using static Treehouse.Common.IntExtensions;
 
 namespace Treehouse
